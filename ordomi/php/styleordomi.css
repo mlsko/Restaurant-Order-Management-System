@@ -1,0 +1,335 @@
+/*css pre celý web*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-image: url(foto/ordomi_background.png);
+}
+
+/*css pre menu */
+
+
+ 
+.menu ul {
+
+    position: relative;
+    transform: skewY(-11deg);
+}
+
+.menu ul li {
+    position: relative;
+    list-style: none;
+    width: 220px;
+    background-color: #3e3f46;
+    padding: 15px;
+    transition: 0.5s;
+    z-index: calc(1*var(--i));
+}
+
+.menu ul li:hover {
+    transform: translateX(-50px);
+    background: #b59740;
+}
+
+
+.menu ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #3e3f46;
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+.menu ul li:hover::before {
+    background: #b59740;
+    filter: brightness(0.7);
+}
+
+.menu ul li::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #3e3f46;
+    filter: brightness(0.9);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+
+.menu ul li:hover::after {
+    background: #b59740;
+    filter: brightness(0.9);
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.menu ul li:last-child::after {
+    box-shadow: -150px 150px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/*css pre index*/
+
+
+.index ul {
+
+    position: relative;
+    transform: skewY(-10deg);
+
+}
+
+.index ul li {
+    position: relative;
+    list-style: none;
+    width: 175px;
+    background-color: #3e3f46;
+    padding: 15px;
+    transition: 0.5s;
+    z-index: calc(1*var(--i));
+}
+
+.index ul li:hover {
+    transform: translateX(-45px);
+    background: #b59740;
+}
+
+
+.index ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -34px;
+    width: 34px;
+    height: 100%;
+    background: #3e3f46;
+    filter: brightness(0.7);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+.index ul li:hover::before {
+    background: #b59740;
+    filter: brightness(0.7);
+}
+
+.index ul li::after {
+    content: '';
+    position: absolute;
+    top: -34px;
+    left: 0;
+    width: 100%;
+    height: 34px;
+    background-color: #3e3f46;
+    filter: brightness(0.9);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+
+.index ul li:hover::after {
+    background: #b59740;
+    filter: brightness(0.9);
+}
+
+.index ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.index ul li:last-child::after {
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/*css pre kontakt cast*/
+
+table.kontakt {
+
+    background-color: #343437;
+    border-radius: 20px;
+    padding: 70px;
+}
+
+table.kontakt tr td {
+    font-size: 20px;
+    padding: 7px;
+    color: white;
+
+}
+
+table.kontakt tr td img
+{
+    margin-bottom: 30px;
+    width: 325px;
+}
+
+table.kontakt tr td label {
+    margin-left: 10%;
+    text-align: start;
+}
+
+
+.kontaktdiv ul li {
+    font-size: 17px;
+    margin-top: 30px;
+    margin-left:34% ;
+    position: relative;
+    list-style: none;
+    height: 40px;
+    width: 100px;
+    background-color: #b59740;
+    padding-left: 18px;
+    padding-top: 8px;
+    transition: 0.5s;
+    border: white;
+    border-radius: 5px;
+}
+
+.kontaktdiv ul li:hover {
+    transform: translateX(-12px);
+    filter: brightness(0.5);
+}
+
+
+.kontaktdiv ul li a {
+
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+/*css pre login cast*/
+
+
+table.login {
+    margin-top: 35px;
+    text-align: center;
+    background-color: #343437;
+    border-radius: 20px;
+    padding: 70px 70px 10px 70px;
+
+}
+
+table.login tr td {
+    padding: 6px;
+
+}
+
+
+
+table.login tr td img{
+    margin-bottom: 30px;
+}
+
+table.login tr td input.placehold{
+    border: solid rgb(225, 199, 5) ;
+    border-radius: 3px;
+    color: #000000;
+    width: 200px;
+    height: 30px;
+    padding-left: 3px;
+
+}
+
+table.login tr td input.sub{
+    margin-top: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    list-style: none;
+    height: 35px;
+    width: 100px;
+    background-color: #b59740;
+    transition: 0.5s;
+    border: #b59740;
+    border-radius: 5px;
+
+}
+
+table.login tr td input.sub:hover{
+    transform: translateX(-12px);
+    filter: brightness(0.5);
+}
+
+.logindiv ul li {
+    padding-top: 6px;
+    margin-left:30% ;
+    position: relative;
+    list-style: none;
+    height: 35px;
+    width: 100px;
+    background-color: #b59740;
+    transition: 0.5s;
+    border: white;
+    border-radius: 5px;
+}
+
+.logindiv ul li:hover {
+    transform: translateX(-12px);
+    filter: brightness(0.5);
+}
+
+
+.logindiv ul li a {
+
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+p.error{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+}
+
+table.delete select
+{
+    margin-left: 40px;
+}
+
+
+
